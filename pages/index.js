@@ -3,6 +3,8 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiOutlineCloudDownload,
+  AiOutlineGlobal,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -32,62 +34,89 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Portfolio</h1>
+          <div class="text-2xl flex justify-center gap-2">
+          <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400 py-1">
+              <AiOutlineGlobal /> </a>
+            <h1 className="uppercase">Boston, MA</h1>
+            </div>
             <ul className="flex items-center">
-              <li>
+            
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className= "cursor-pointer text-2xl"
                 />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="Mitchell Mondro Resume November 2018 emm.pdf"
-                >
-                
-                  Resume
-                </a>
-              </li>
-            </ul>
+        
+              </ul>
+            
           </nav>
-          <div className="text-center p-10 py-10">
+          <div className="text-center p=10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Mitch Mondro
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            
+            <h3 className="text-2xl py-2 dark:text-white md:text-4xl">
               I am a <Typewriter options ={{
                 strings: [
-                  "Marketing Expert!!!",
-                  "James Bond",
+                  "Marketing Specialist",
+                  "Web Developer",
+                  "YouTuber"
                 ],
                 autoStart: true,
                 loop: true,
               }}
               />
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            This is a test
-            </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              
-              <a href="https://twitter.com/mitchellmondro" target="_blank" rel="noopener noreferrer">
-              <AiFillTwitterCircle /> </a>
-              <a href="https://www.linkedin.com/in/mitchellmondro/" target="_blank" rel="noopener noreferrer">
-              <AiFillLinkedin /> </a>
-              <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer">
-              <AiFillYoutube /> </a>
-              
-      
+
+
+            <div class="text-3xl flex justify-center gap-2 p-6">
+            <a  href="Mitchell Mondro Resume November 2018 emm.pdf" target="_blank" rel="noopener noreferrer" class="
+            rounded 
+            inline-block 
+            px-12 
+            py-3 
+            bg-gradient-to-r from-cyan-500 text- to-teal-500 
+            text-white 
+            font-sans 
+            text-lg 
+            leading-tight 
+            shadow-md 
+            hover:bg-blue-700 
+            hover:shadow-lg 
+            focus:bg-blue-700 
+            focus:shadow-lg 
+            focus:outline-none 
+            focus:ring-0 
+            active:bg-blue-800 
+            active:shadow-lg 
+            transition 
+            duration-150 
+            ease-in-out">
+                  Resume
+            </a>
+            <a href="Mitchell Mondro Resume November 2018 emm.pdf" download="download resume" target="_blank" rel="noopener noreferrer" class = "py-2 flex justify-center gap-4 text-black dark:text-white hover:text-teal-400">
+              <AiOutlineCloudDownload /> </a>
             </div>
+
+            
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
+            </div>
+
+            <div class="p-6 text-5xl flex justify-center gap-8 text-black dark:text-white">
+              
+              <a href="https://twitter.com/mitchellmondro" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillTwitterCircle /> </a>
+              <a href="https://www.linkedin.com/in/mitchellmondro/" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillLinkedin /> </a>
+              <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillYoutube /> </a>
+            
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-3xl dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -148,6 +177,7 @@ export default function Home() {
           </div>
         </section>
         <section className="py-10">
+          
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
