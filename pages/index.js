@@ -17,6 +17,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,10 +56,18 @@ export default function Home() {
               Mitch Mondro
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Marketing Expert
+              I am a <Typewriter options ={{
+                strings: [
+                  "Marketing Expert!!!",
+                  "James Bond",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+              />
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Hello World!!
+            This is a test
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               
