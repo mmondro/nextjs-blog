@@ -59,7 +59,7 @@ export default function Home() {
                 strings: [
                   "Marketing Specialist",
                   "Web Developer",
-                  "YouTubere"
+                  "YouTuber"
                 ],
                 autoStart: true,
                 loop: true,
@@ -69,7 +69,7 @@ export default function Home() {
 
 
             <div class="text-3xl flex justify-center gap-2 p-6">
-            <a  href="Mitchell Mondro Resume November 2018 emm.pdf" target="_blank" rel="noopener noreferrer" class="
+            <a  href="Mitch Mondro Resume December 2022.pdf" target="_blank" rel="noopener noreferrer" class="
             rounded 
             inline-block 
             px-12 
@@ -93,7 +93,7 @@ export default function Home() {
             ease-in-out">
                   Resume
             </a>
-            <a href="Mitchell Mondro Resume November 2018 emm.pdf" download="download resume" target="_blank" rel="noopener noreferrer" class = "py-2 flex justify-center gap-4 text-black dark:text-white hover:text-teal-400">
+            <a href="Mitch Mondro Resume December 2022.pdf" download="download resume" target="_blank" rel="noopener noreferrer" class = "py-2 flex justify-center gap-4 text-black dark:text-white hover:text-teal-400">
               <AiOutlineCloudDownload /> </a>
             </div>
 
@@ -110,7 +110,7 @@ export default function Home() {
               <AiFillLinkedin /> </a>
               <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
               <AiFillYoutube /> </a>
-
+            
             </div>
           </div>
         </section>
@@ -122,48 +122,44 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
-              <h2 className="text-3xl font-medium pt-8 pb-2  ">
+              <h2 className="text-3xl font-medium pt-8 pb-2">
                 Marketing Specialist
               </h2>
               <p className="py-2">
                 Coghlin Companies, Westborough, MA
               </p>
-              <h4 className="py-4 text-teal-600"> Executed ABM marketing campaigns dedicated to heightened branding awareness, cultivating leads, enhancing partner relationships, and increasing sales efforts and overall profitability 
-Increased online awareness and branding by utilizing Search Engine Optimization (SEO) and Search Engine Marketing 
-       (SEM) through balanced creation of PR’s, blogs, videos, and newsletters 
-Analyzed web and campaign metrics for continuous improvement via Google Analytics
-Strategized, developed, and managed paid digital marketing across Google Adwords, Instagram, and Facebook with a monthly budget of $5,000 resulting in multiple qualified leads a month
-Performed rigorous A/B testing, which improved the conversion rate of marketing landing pages by 150%
-Automated marketing KPI reporting using Google Analytics and Google Sheets, saving roughly 6 hours of manual work each week
-              </h4>
+              <h4 className="text-teal-600">May 2019 - Present</h4>
+              <p className="text-gray-800 py-1">&bull; Executed ABM marketing campaigns dedicated to heightened branding awareness, cultivating leads, enhancing partner relationships, and increasing sales efforts and overall profitability </p>
+              <p className="text-gray-800 py-1">&bull; Increased online awareness and branding by utilizing Search Engine Optimization (SEO) and Search Engine Marketing 
+       (SEM) through balanced creation of PR’s, blogs, videos, and newsletters</p>
+              <p className="text-gray-800 py-1">&bull; Analyzed web and campaign metrics for continuous improvement via Google Analytics</p>
+              <p className="text-gray-800 py-1">&bull; Strategized, developed, and managed paid digital marketing across Google Adwords, Instagram, and Facebook with a monthly budget of $5,000 resulting in multiple qualified leads a month</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+              <h3 className="text-3xl font-medium pt-8 pb-2">
+              Brand Offer Marketing Intern
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+              Dassault Systèmes, Waltham, MA
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className=" text-teal-600">Summer 2018</h4>
+              <p className="text-gray-800 py-1">&bull; Analyzed brand website using Google Analytics and developed a dashboard to present findings </p>
+              <p className="text-gray-800 py-1">&bull; Helped create webinars and white papers for inbound and outbound marketing campaigns </p>
+              <p className="text-gray-800 py-1">&bull; Wrote emails and landing pages for webinars and white papers </p>
+              <p className="text-gray-800 py-1">&bull; Produced infographics and listicles to feature brand product benefits </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <h3 className="text-3xl font-medium pt-8 pb-2 ">Dapper Bros Design</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Freelance design and web development company I started with my brother to help non technical businesses launch a fully functional website that is easy to update and maintain. We have developed an iterative process to build high quality websites that leave a strong first impression and build trust.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">We handle:</h4>
+              <p className="text-gray-800 py-1">🎨 Design</p>
+              <p className="text-gray-800 py-1">✍️ Copy</p>
+              <p className="text-gray-800 py-1">🛠️ Development</p>
+              <p className="text-gray-800 py-1">🚀 Deployment</p>
             </div>
           </div>
         </section>
@@ -199,7 +195,7 @@ Won $500 in funding in a Shark Tank like competition at Clark where my team and 
               />
               <h2 className="py-5 text-xl dark:text-white"> Experiment Music YouTube Channel</h2>
               <p className=" flex justify-center dark:text-white" > 
-              Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and conten creation techniques to attract new subscribers and generate viral videos.
+              Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
             </p>
             </div>
             <div className="basis-1/3 flex-1">
