@@ -9,12 +9,12 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/Mitch.png";
-import code from "../public/dassault.png";
+import code from "../public/Dassault.png";
 import design from "../public/coghlin-companies-web-logo-22.png";
-import consulting from "../public/dassault.png";
+import consulting from "../public/Dassault.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
-import web2 from "../public/ExperimentMusic.png";
+import web2 from "../public/experimentmusic.png";
 import web3 from "../public/triply.png";
 import web4 from "../public/googleanalytics.png";
 import web5 from "../public/web5.png";
