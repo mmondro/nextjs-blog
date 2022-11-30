@@ -59,7 +59,7 @@ export default function Home() {
                 strings: [
                   "Marketing Specialist",
                   "Web Developer",
-                  "YouTuber"
+                  "YouTubere"
                 ],
                 autoStart: true,
                 loop: true,
