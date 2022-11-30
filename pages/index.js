@@ -11,7 +11,7 @@ import { useState } from "react";
 import deved from "../public/Mitch.png";
 import code from "../public/Dassault.png";
 import design from "../public/coghlin-companies-web-logo-22.png";
-import consulting from "../public/Dassault.png";
+import consulting from "../public/DBD - Transparent.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
             <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-3xl font-medium pt-8 pb-2 ">Dapper Bros Design</h3>
+              <h3 className="text-3xl font-medium pt-2 pb-2 ">Dapper Bros Design</h3>
               <p className="py-2">
                 Freelance design and web development company I started with my brother to help non technical businesses launch a fully functional website that is easy to update and maintain. We have developed an iterative process to build high quality websites that leave a strong first impression and build trust.
               </p>
