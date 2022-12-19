@@ -70,7 +70,7 @@ export default function Home() {
 
 
             <div class="text-3xl flex justify-center gap-2 p-6">
-            <a  href="Mitch Mondro Resume December 2022.pdf" target="_blank" rel="noopener noreferrer" class="
+            <a  href="Mitchell_Mondro_Resume.pdf" target="_blank" rel="noopener noreferrer" class="
             rounded 
             inline-block 
             px-12 
