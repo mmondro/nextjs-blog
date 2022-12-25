@@ -17,9 +17,10 @@ import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
 import web3 from "../public/triply.png";
 import web4 from "../public/googleanalytics.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import Typewriter from 'typewriter-effect';
+import Scroller from './scroller';
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -54,20 +55,6 @@ export default function Home() {
               Mitch Mondro
             </h2>
             
-            <h3 className="text-2xl py-2 dark:text-white md:text-4xl">
-              I am a <Typewriter options ={{
-                strings: [
-                  "Marketing Specialist",
-                  "Web Developer",
-                  "YouTuber"
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-              />
-            </h3>
-
-
             <div class="text-3xl flex justify-center gap-2 p-6">
             <a  href="Mitch Mondro Resume December 2022.pdf" target="_blank" rel="noopener noreferrer" class="
             rounded 
@@ -115,43 +102,41 @@ export default function Home() {
           </div>
         </section>
         <section>
+
           <div className="flex justify-center">
-            <h3 className="text-3xl dark:text-white ">Work Experience</h3>
+            <h3 className="text-3xl dark:text-white ">Featured Projects</h3>
             
           </div>
-          <div className="lg:flex gap-10">
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
-              <h2 className="text-3xl font-medium pt-8 pb-2">
-                Marketing Specialist
+
+      
+          <div className="lg:flex flex-wrap gap-10 flex">
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+              <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+              <h2 className="text-xl font-medium pt-8 pb-2">
+              Clark Ureka Challenge: Sapeince News  
               </h2>
-              <p className="py-2">
-                Coghlin Companies, Westborough, MA
+              <p> 
+              Won $500 in funding in a Shark Tank like competition at Clark where my team and I built and pitched a web application that used machine learning to predict bias and factualness likeliness in online news articles. The web app took the input of a news article URL and delivered a bias factualness prediction of that article from extreme left to extreme right. The algorithm was trained on thousands of publications that were labeled for political bias and factualness using the International Fact Checking Network.
               </p>
-              <h4 className="text-teal-600">May 2019 - Present</h4>
-              <p className="text-gray-800 py-1">&bull; Executed ABM marketing campaigns dedicated to heightened branding awareness, cultivating leads, enhancing partner relationships, and increasing sales efforts and overall profitability </p>
-              <p className="text-gray-800 py-1">&bull; Increased online awareness and branding by utilizing Search Engine Optimization (SEO) and Search Engine Marketing 
-       (SEM) through balanced creation of PR’s, blogs, videos, and newsletters</p>
-              <p className="text-gray-800 py-1">&bull; Analyzed web and campaign metrics for continuous improvement via Google Analytics</p>
-              <p className="text-gray-800 py-1">&bull; Strategized, developed, and managed paid digital marketing across Google Adwords, Instagram, and Facebook with a monthly budget of $5,000 resulting in multiple qualified leads a month</p>
             </div>
-            <div className="shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-3xl font-medium pt-8 pb-2">
-              Brand Offer Marketing Intern
-              </h3>
-              <p className="py-2">
-              Dassault Systèmes, Waltham, MA
+          
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+              <Image src={web2} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+              <h2 className="text-xl font-medium pt-8 pb-2">
+              YouTube Channel 
+              </h2>
+              <p> 
+              Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
               </p>
-              <h4 className=" text-teal-600">Summer 2018</h4>
-              <p className="text-gray-800 py-1">&bull; Analyzed brand website using Google Analytics and developed a dashboard to present findings </p>
-              <p className="text-gray-800 py-1">&bull; Helped create webinars and white papers for inbound and outbound marketing campaigns </p>
-              <p className="text-gray-800 py-1">&bull; Wrote emails and landing pages for webinars and white papers </p>
-              <p className="text-gray-800 py-1">&bull; Produced infographics and listicles to feature brand product benefits </p>
             </div>
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-3xl font-medium pt-8 pb-2 ">Dapper Bros Design</h3>
+            </div>
+
+            <div className="lg:flex flex-wrap gap-10 flex">
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+              <Image src={web4} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+              <h2 className="text-xl font-medium pt-8 pb-2">
+              Website Development Agency: Dapper Bros
+              </h2>
               <p className="py-2">
                 Freelance design and web development company I started with my brother to help non technical businesses launch a fully functional website that is easy to update and maintain. We have developed an iterative process to build high quality websites that leave a strong first impression and build trust.
               </p>
@@ -161,70 +146,50 @@ export default function Home() {
               <p className="text-gray-800 py-1">🛠️ Development</p>
               <p className="text-gray-800 py-1">🚀 Deployment</p>
             </div>
+
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+              <Image src={web3} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+              <h2 className="text-xl font-medium pt-8 pb-2">
+              Facebook Lead Gen Ad Campaign: Triply
+              </h2>
+              <p> 
+              Tested viability of new travel application for client by building a landing page and generating traffic via Facebook/ Instagram ad campaign. Captured email list of potential users for application launch.
+              </p>
+            </div>
+
           </div>
         </section>
+
+
+
         <section className="py-10">
           
           <div>
-            <h3 className="text-3xl py-1 flex justify-center dark:text-white ">Projects</h3>
-            
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
+
+            <div>
+            <h3 className=" dark:text-white flex justify-center text-2xl"> Skills </h3>
+            <p className=" dark:text-white flex justify-center">
+              <Typewriter class="text-xl" options ={{
+                strings: [
+                  "Programming Languages/Frameworks:  Javascript ES6, Python, HTML, CSS, SQL, Tailwind, Solidity, React, Next.js, Flask",
+                  "Analytics Applications: Google Analytics, Google Ad Words, Optimizely, SEMrush, HubSpot",
+                  "Design Applications: Adobe: Illustrator, Photoshop, Premiere, Figma, Wordpress, Webflow, Canva, Midjourney",
+                  "Interests: Baseball, Golf, Music Production, Travel, NFTs, Crypto, Writing, Powerlifting"
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 30
+              }}
               />
-              
-              <h2 className="py-5 text-xl dark:text-white"> Clark Ureka Challenge: Sapeince News (Machine Learning)</h2>
-              <p className=" flex justify-center dark:text-white" > 
-Won $500 in funding in a Shark Tank like competition at Clark where my team and I built and pitched a web application that used machine learning to predict bias and factualness likeliness in online news articles. The web app took the input of a news article URL and delivered a bias factualness prediction of that article from extreme left to extreme right. The algorithm was trained on thousands of publications that were labeled for political bias and factualness using the International Fact Checking Network. 
-              </p>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-              <h2 className="py-5 text-xl dark:text-white"> Experiment Music YouTube Channel</h2>
-              <p className=" flex justify-center dark:text-white" > 
-              Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
-            </p>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-<h2 className="py-5 text-xl dark:text-white"> Experiment Music Website</h2>
-            <p className=" flex justify-center dark:text-white" > 
-            Funneled YouTube traffic to a Wordpress ecomerce website where I sold original music averaging $100 a month in sales. 
-            </p>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-<h2 className="py-5 text-xl dark:text-white"> Triply Facebook and Instagram Ad Campaign</h2>
-<p className=" flex justify-center dark:text-white" > 
-Tested viability of new travel application for client by building a landing page and generating traffic via Facebook/ Instagram ad campaign. Captured email list of potential users for application launch. 
             </p>
             </div>
             
+            <div>
+              
+
+
+            </div>
+
           </div>
         </section>
       </main>
