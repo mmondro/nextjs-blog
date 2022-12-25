@@ -9,16 +9,12 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/Mitch.png";
-import code from "../public/Dassault.png";
-import design from "../public/coghlin-companies-web-logo-22.png";
-import consulting from "../public/Dassault.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
 import web3 from "../public/triply.png";
 import web4 from "../public/googleanalytics.png";
 import Typewriter from 'typewriter-effect';
-import Scroller from './scroller';
 
 
 
@@ -56,7 +52,7 @@ export default function Home() {
             </h2>
             
             <div class="text-3xl flex justify-center gap-2 p-6">
-            <a  href="Mitch Mondro Resume December 2022.pdf" target="_blank" rel="noopener noreferrer" class="
+            <a  href="Mitch_Mondro_Resume.pdf" target="_blank" rel="noopener noreferrer" class="
             rounded 
             inline-block 
             px-12 
@@ -80,7 +76,7 @@ export default function Home() {
             ease-in-out">
                   Resume
             </a>
-            <a href="Mitch Mondro Resume December 2022.pdf" download="download resume" target="_blank" rel="noopener noreferrer" class = "py-2 flex justify-center gap-4 text-black dark:text-white hover:text-teal-400">
+            <a href="Mitch_Mondro_Resume.pdf" download="download resume" target="_blank" rel="noopener noreferrer" class = "py-2 flex justify-center gap-4 text-black dark:text-white hover:text-teal-400">
               <AiOutlineCloudDownload /> </a>
             </div>
 
@@ -183,13 +179,6 @@ export default function Home() {
               />
             </p>
             </div>
-            
-            <div>
-              
-
-
-            </div>
-
           </div>
         </section>
       </main>
