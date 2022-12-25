@@ -9,14 +9,15 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/Mitch.png";
+import code from "../public/Dassault.png";
+import design from "../public/coghlin-companies-web-logo-22.png";
+import consulting from "../public/Dassault.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
 import web3 from "../public/triply.png";
 import web4 from "../public/googleanalytics.png";
 import Typewriter from 'typewriter-effect';
-
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -104,7 +105,7 @@ export default function Home() {
             
           </div>
 
-      
+        
           <div className="lg:flex flex-wrap gap-10 flex">
             <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
               <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
@@ -127,9 +128,9 @@ export default function Home() {
             </div>
             </div>
 
-            <div className="lg:flex flex-wrap gap-10 flex">
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
-              <Image src={web4} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+            <div>
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={web4} className="border-2 border-grey rounded-xl" width={400} height={300} />
               <h2 className="text-xl font-medium pt-8 pb-2">
               Website Development Agency: Dapper Bros
               </h2>
@@ -142,17 +143,6 @@ export default function Home() {
               <p className="text-gray-800 py-1">🛠️ Development</p>
               <p className="text-gray-800 py-1">🚀 Deployment</p>
             </div>
-
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
-              <Image src={web3} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
-              <h2 className="text-xl font-medium pt-8 pb-2">
-              Facebook Lead Gen Ad Campaign: Triply
-              </h2>
-              <p> 
-              Tested viability of new travel application for client by building a landing page and generating traffic via Facebook/ Instagram ad campaign. Captured email list of potential users for application launch.
-              </p>
-            </div>
-
           </div>
         </section>
 
@@ -161,11 +151,25 @@ export default function Home() {
         <section className="py-10">
           
           <div>
+            
+      
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+              />
+<h2 className="py-5 text-xl dark:text-white"> Triply Facebook and Instagram Ad Campaign</h2>
+<p className=" flex justify-center dark:text-white" > 
+Tested viability of new travel application for client by building a landing page and generating traffic via Facebook/ Instagram ad campaign. Captured email list of potential users for application launch. 
+            </p>
+            </div>
 
             <div>
-            <h3 className=" dark:text-white flex justify-center text-2xl"> Skills </h3>
-            <p className=" dark:text-white flex justify-center">
-              <Typewriter class="text-xl" options ={{
+            <h3 className="text-x py-2 dark:text-white md:text-4xl">
+              Skills <Typewriter class="text-sm" options ={{
                 strings: [
                   "Programming Languages/Frameworks:  Javascript ES6, Python, HTML, CSS, SQL, Tailwind, Solidity, React, Next.js, Flask",
                   "Analytics Applications: Google Analytics, Google Ad Words, Optimizely, SEMrush, HubSpot",
@@ -177,8 +181,9 @@ export default function Home() {
                 delay: 30
               }}
               />
-            </p>
+            </h3>
             </div>
+            
           </div>
         </section>
       </main>
