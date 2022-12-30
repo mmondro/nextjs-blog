@@ -30,29 +30,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-          <div class="text-2xl flex justify-center gap-2">
-          <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400 py-1">
-              <AiOutlineGlobal /> </a>
+        <section>
+          <nav className="py-5 mb-2 flex justify-between dark:text-white">
+          <div className="text-x flex justify-center gap-2">
+          <a className = "hover:text-teal-400">
+          <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className= "cursor-pointer text-2xl"
+                /> </a>
             <h1 className="uppercase">Boston, MA</h1>
             </div>
             <ul className="flex items-center">
+
+              <div class="text-xl flex justify-center gap-4 text-black dark:text-white">
+              
+              <a href="https://twitter.com/mitchellmondro" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillTwitterCircle /> </a>
+              <a href="https://www.linkedin.com/in/mitchellmondro/" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillLinkedin /> </a>
+              <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
+              <AiFillYoutube /> </a>
             
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className= "cursor-pointer text-2xl"
-                />
-        
+            </div>
               </ul>
             
           </nav>
-          <div className="text-center p=10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+</section>
+          <section>
+          <div className="text-center">
+            <h2 className="text-5xl py-8 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Mitch Mondro
             </h2>
             
-            <div class="text-3xl flex justify-center gap-2 p-6">
+            <div class="text-3xl flex justify-center gap-2 pb-8 pt-16">
             <a  href="Mitch_Mondro_Resume.pdf" target="_blank" rel="noopener noreferrer" class="
             rounded 
             inline-block 
@@ -81,33 +91,18 @@ export default function Home() {
               <AiOutlineCloudDownload /> </a>
             </div>
 
-            
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
-            </div>
-
-            <div class="p-6 text-5xl flex justify-center gap-8 text-black dark:text-white">
-              
-              <a href="https://twitter.com/mitchellmondro" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
-              <AiFillTwitterCircle /> </a>
-              <a href="https://www.linkedin.com/in/mitchellmondro/" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
-              <AiFillLinkedin /> </a>
-              <a href="https://www.youtube.com/channel/UCNtjzKme85NQ4xfAZWK3wLw" target="_blank" rel="noopener noreferrer" class = "hover:text-teal-400">
-              <AiFillYoutube /> </a>
-            
-            </div>
+      
           </div>
         </section>
         <section>
-
           <div className="flex justify-center">
             <h3 className="text-3xl dark:text-white ">Featured Projects</h3>
             
           </div>
 
         
-          <div className="lg:flex flex-wrap gap-10 flex">
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+          <div className="lg:flex flex-wrap gap-10">
+            <div className=" shadow-lg p-8 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
               <h2 className="text-xl font-medium pt-8 pb-2">
               Clark Ureka Challenge: Sapeince News  
@@ -117,75 +112,107 @@ export default function Home() {
               </p>
             </div>
           
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 w-1/2">
+            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={web2} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
               <h2 className="text-xl font-medium pt-8 pb-2">
               YouTube Channel 
               </h2>
               <p> 
-              Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
+              I built an audience of 6,500 subscribers on my instrumental YouTube channel by optimizing my titles and tags for search and using social media to promote my videos. I've reached several key milestones on my channel, including reaching over 3.5M channel views and 150K total watch hours. My channel includes instrumental remakes, how to's and original beats. I've received a lot of positive feedback from my viewers, with many using my music in their own work. I've also been able to monetize my channel through YouTube ads. I am currently taking a break from posting to reposition my strategy for the channel as the music production landscape has changed in the last year.
               </p>
             </div>
             </div>
 
-            <div>
-            <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={web4} className="border-2 border-grey rounded-xl" width={400} height={300} />
-              <h2 className="text-xl font-medium pt-8 pb-2">
-              Website Development Agency: Dapper Bros
-              </h2>
-              <p className="py-2">
-                Freelance design and web development company I started with my brother to help non technical businesses launch a fully functional website that is easy to update and maintain. We have developed an iterative process to build high quality websites that leave a strong first impression and build trust.
-              </p>
-              <h4 className="py-4 text-teal-600">We handle:</h4>
-              <p className="text-gray-800 py-1">🎨 Design</p>
-              <p className="text-gray-800 py-1">✍️ Copy</p>
-              <p className="text-gray-800 py-1">🛠️ Development</p>
-              <p className="text-gray-800 py-1">🚀 Deployment</p>
-            </div>
-          </div>
-        </section>
 
+<div className="lg:flex flex-wrap gap-10">
+  <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+    <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+    <h2 className="text-xl font-medium pt-8 pb-2">
+    AI Web App Copywriting Tool   
+    </h2>
+    <p> 
+    Oct 2022 I developed an AI-powered web app copywriting tool to assist with my web development projects for clients. The tool uses machine learning to turn a company's description into website copy with a proven high conversion rate. I was responsible for the full development process, including researching and implementing AI technology, designing the user interface.
+    </p>
+  </div>
 
+  <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+    <Image src={web2} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+    <h2 className="text-xl font-medium pt-8 pb-2">
+    YouTube Channel 
+    </h2>
+    <p> 
+    Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
+    </p>
+  </div>
+  </div>
 
-        <section className="py-10">
-          
-          <div>
-            
-      
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-<h2 className="py-5 text-xl dark:text-white"> Triply Facebook and Instagram Ad Campaign</h2>
-<p className=" flex justify-center dark:text-white" > 
-Tested viability of new travel application for client by building a landing page and generating traffic via Facebook/ Instagram ad campaign. Captured email list of potential users for application launch. 
-            </p>
-            </div>
+  </section>
 
-            <div>
-            <h3 className="text-x py-2 dark:text-white md:text-4xl">
-              Skills <Typewriter class="text-sm" options ={{
-                strings: [
-                  "Programming Languages/Frameworks:  Javascript ES6, Python, HTML, CSS, SQL, Tailwind, Solidity, React, Next.js, Flask",
-                  "Analytics Applications: Google Analytics, Google Ad Words, Optimizely, SEMrush, HubSpot",
-                  "Design Applications: Adobe: Illustrator, Photoshop, Premiere, Figma, Wordpress, Webflow, Canva, Midjourney",
-                  "Interests: Baseball, Golf, Music Production, Travel, NFTs, Crypto, Writing, Powerlifting"
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 30
-              }}
-              />
-            </h3>
-            </div>
-            
-          </div>
-        </section>
+  <h3 className="text-3xl dark:text-white flex justify-center"> Skills</h3>
+  <div class="flex flex-col md: flex-row md:justify-between md:items-center text-x py-4 dark:text-white">
+  <div class="md:w-2/3 px-2">
+  
+  <h4 class="justify-center text-xl"> Analytics Applications: </h4>
+   <Typewriter class=" justify-center dark:text-white" options ={{
+        strings: [
+          "Google Analytics, Google Ad Words, Optimizely, SEMrush, HubSpot"
+        ],
+        autoStart: true,
+        loop: false,
+        delay: 30,
+        deleteSpeed: 1000000,
+        cursor: ""
+      }}
+      />
+      <br/>
+      <h4 class="justify-center text-xl"> Programming Languages/Frameworks:</h4>
+      <Typewriter class="text-sm justify-cente dark:text-whiter" options ={{
+        strings: [
+          " Javascript ES6, Python, HTML, CSS, SQL, Tailwind, Solidity, React, Next.js, Flask",
+        ],
+        autoStart: true,
+        loop: false,
+        delay: 30,
+        deleteSpeed: 1000000,
+        cursor: ""
+      }}
+      />
+      <br/>
+      <h4 class="justify-center text-xl"> Design Applications: </h4>
+      <Typewriter class="text-sm justify-cente dark:text-whiter" options ={{
+        strings: [
+          "Adobe: Illustrator, Photoshop, Premiere, Figma, Wordpress, Webflow, Canva, Midjourney"
+        ],
+        autoStart: true,
+        loop: false,
+        delay: 30,
+        deleteSpeed: 1000000,
+        cursor: ""
+      }}
+      />
+      <br/>
+      <h4 class="justify-center text-xl"> Interests:</h4>
+      <Typewriter class="text-sm justify-cente dark:text-whiter" options ={{
+        strings: [
+          " Baseball, Golf, Music Production, Travel, NFTs, Crypto, Writing, Powerlifting"
+        ],
+        autoStart: true,
+        loop: false,
+        delay: 30,
+        deleteSpeed: 1000000,
+        cursor: ""
+      }}
+      />
+  
+  </div>
+  <div class="md:w-1/3 flex items-center justify-center pb-8">
+  <div className=" bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-40 md:h-70 md:w-70">
+    <Image src={deved} layout="fill" objectFit="cover" objectPosition="center" />
+  </div>
+</div>
+
+</div>
+
       </main>
     </div>
   );
