@@ -15,7 +15,7 @@ import consulting from "../public/Dassault.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
-import web3 from "../public/triply.png";
+import web3 from "../public/AI_Tool.png";
 import web4 from "../public/googleanalytics.png";
 import Typewriter from 'typewriter-effect';
 
@@ -105,53 +105,53 @@ export default function Home() {
             <div className=" shadow-lg p-8 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
               <h2 className="text-xl font-medium pt-8 pb-2">
-              Clark Ureka Challenge: Sapeince News  
+              Sapience News: Bias and Factualness Checker for News Articles
               </h2>
               <p> 
-              Won $500 in funding in a Shark Tank like competition at Clark where my team and I built and pitched a web application that used machine learning to predict bias and factualness likeliness in online news articles. The web app took the input of a news article URL and delivered a bias factualness prediction of that article from extreme left to extreme right. The algorithm was trained on thousands of publications that were labeled for political bias and factualness using the International Fact Checking Network.
+              Won $500 in funding in a college Shark Tank like competition where my team and I built and pitched a web application that used machine learning to predict bias and factualness likeliness in online news articles. The web app took the input of a news article URL and delivered a bias factualness prediction of that article from extreme left to extreme right. The algorithm was trained on thousands of publications that were labeled for political bias and factualness using the International Fact Checking Network.
               </p>
             </div>
-          
             <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+    <Image src={web3} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+    <h2 className="text-xl font-medium pt-8 pb-2">
+    AI Web App Copywriting Tool   
+    </h2>
+    <p> 
+    I developed an AI-powered web app copywriting tool to assist with my web development projects for clients. The tool uses machine learning to turn a company description into website copy with a proven high conversion rate. I was responsible for the full development process, including researching and implementing AI technology, designing the user interface.
+    </p>
+  </div>
+            
+  </div>
+
+
+<div className="lg:flex flex-wrap gap-10">
+<div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={web2} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
               <h2 className="text-xl font-medium pt-8 pb-2">
               YouTube Channel 
               </h2>
               <p> 
-              I built an audience of 6,500 subscribers on my instrumental YouTube channel by optimizing my titles and tags for search and using social media to promote my videos. I've reached several key milestones on my channel, including reaching over 3.5M channel views and 150K total watch hours. My channel includes instrumental remakes, how to's and original beats. I've received a lot of positive feedback from my viewers, with many using my music in their own work. I've also been able to monetize my channel through YouTube ads. I am currently taking a break from posting to reposition my strategy for the channel as the music production landscape has changed in the last year.
+              I've built an audience of 6,600 subscribers on my instrumental YouTube channel by optimizing my titles and tags for search and using social media to promote my videos. I've reached several key milestones on my channel, including reaching over 3.5M channel views and 150K total watch hours. My channel includes instrumental remakes, how to's and original beats. I've received a lot of positive feedback from my viewers, with many using my music in their own work. I've also been able to monetize my channel through YouTube ads. 
               </p>
             </div>
-            </div>
-
-
-<div className="lg:flex flex-wrap gap-10">
-  <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-    <Image src={web1} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
-    <h2 className="text-xl font-medium pt-8 pb-2">
-    AI Web App Copywriting Tool   
-    </h2>
-    <p> 
-    Oct 2022 I developed an AI-powered web app copywriting tool to assist with my web development projects for clients. The tool uses machine learning to turn a company's description into website copy with a proven high conversion rate. I was responsible for the full development process, including researching and implementing AI technology, designing the user interface.
-    </p>
-  </div>
 
   <div className=" shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-    <Image src={web2} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
+    <Image src={web4} className="border-2 border-grey rounded-xl w-full" width={400} height={300} />
     <h2 className="text-xl font-medium pt-8 pb-2">
-    YouTube Channel 
+    Ecommerce Website: Experiment Music
     </h2>
     <p> 
-    Built an audience of 6,500 subscribers on my instrumental YouTube channel. Utilized SEO and content creation techniques to attract new subscribers and generate viral videos.
+    I created an ecommerce website to sell instrumental tracks and beats. I promoted the website through my YouTube channel, which has 6,600 subscribers, and through SEO, email campaigns, and social media advertising. The website has received positive feedback and generated sales. I also implemented a newsletter that sends out free beats every week, which I automated using marketing tools.
     </p>
   </div>
   </div>
+
 
   </section>
+  <h3 className="text-3xl dark:text-white"> Skills</h3>
+  <div class="flex flex-col md:flex-row justify-between items-center text-x dark:text-white pb-10">
+  <div class="md:w-2/3 ">
 
-  <h3 className="text-3xl dark:text-white flex justify-center"> Skills</h3>
-  <div class="flex flex-col md: flex-row md:justify-between md:items-center text-x py-4 dark:text-white">
-  <div class="md:w-2/3 px-2">
-  
   <h4 class="justify-center text-xl"> Analytics Applications: </h4>
    <Typewriter class=" justify-center dark:text-white" options ={{
         strings: [
@@ -205,11 +205,13 @@ export default function Home() {
       />
   
   </div>
-  <div class="md:w-1/3 flex items-center justify-center pb-8">
-  <div className=" bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-40 md:h-70 md:w-70">
+  <div class="md:w-1/3 flex items-center justify-center align-items-center">
+  <div className=" bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden md:h-70 md:w-70">
     <Image src={deved} layout="fill" objectFit="cover" objectPosition="center" />
   </div>
 </div>
+
+
 
 </div>
 

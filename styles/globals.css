@@ -24,5 +24,12 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 
+  /* My main CSS file */
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/FontsFree-Net-Proxima-Nova-Xbold.otf');
+ 
+}
 
 }
