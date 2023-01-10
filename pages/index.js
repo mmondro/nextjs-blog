@@ -15,7 +15,7 @@ import consulting from "../public/Dassault.png";
 import Image from "next/image";
 import web1 from "../public/sapience.png";
 import web2 from "../public/experimentmusic.png";
-import web3 from "../public/AI_Tool.png";
+import web3 from "../public/AI_Hero_Copy_Generator.png";
 import web4 from "../public/googleanalytics.png";
 import Typewriter from 'typewriter-effect';
 
@@ -116,9 +116,33 @@ export default function Home() {
     <h2 className="text-xl font-medium pt-8 pb-2">
     AI Web App Copywriting Tool   
     </h2>
-    <p> 
-    I developed an AI-powered web app copywriting tool to assist with my web development projects for clients. The tool uses machine learning to turn a company description into website copy with a proven high conversion rate. I was responsible for the full development process, including researching and implementing AI technology, designing the user interface.
+    <p className="pb-8"> 
+    I developed an AI-powered web app copywriting tool to assist with my web development projects. The tool uses machine learning to turn a company description into website copy with a proven high conversion rate. I was responsible for the full development process, including researching and implementing AI technology, designing the user interface.
     </p>
+    <a  href="https://ai-website-copywriter.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="
+            rounded 
+            inline-block 
+            px-12 
+            py-3
+            bg-gradient-to-r from-cyan-500 text- to-teal-500 
+            text-white 
+            font-sans 
+            text-lg 
+            leading-tight 
+            shadow-md 
+            hover:bg-blue-700 
+            hover:shadow-lg 
+            focus:bg-blue-700 
+            focus:shadow-lg 
+            focus:outline-none 
+            focus:ring-0 
+            active:bg-blue-800 
+            active:shadow-lg 
+            transition 
+            duration-150 
+            ease-in-out">
+                  Try It Out
+            </a>
   </div>
             
   </div>
