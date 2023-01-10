@@ -1,9 +1,10 @@
-My Portfolio Website
+**My Portfolio Website
+**
 Welcome to my portfolio website! This site was built using Next.js, a JavaScript framework for building server-rendered React applications. It was also styled with Tailwind CSS, a utility-first CSS framework.
 
 The site is hosted on Vercel, a cloud platform for hosting web applications.
 
-Features
+**Features**
 Responsive design for optimal viewing on any device
 A clean, modern aesthetic
 Easy navigation with a fixed header and smooth scroll behavior
